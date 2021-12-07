@@ -26,8 +26,10 @@ export const Filmes: React.FC = () => {
         // não atualiza a página
         event.preventDefault()
 
+        const myAPIKey = 'b5c16b59';
+
         try {
-            const response = await apiImdb.get<IFilme>(`${novoFilme}&apikey=b5c16b59`)
+            const response = await apiImdb.get<IFilme>(`${novoFilme}&apikey=${myAPIKey}`)
             setFilmes([...filmes, response.data])
         } catch (err) {
             console.log('Filme não encontrado')
