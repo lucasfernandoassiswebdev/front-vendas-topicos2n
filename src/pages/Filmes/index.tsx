@@ -26,7 +26,7 @@ export const Filmes: React.FC = () => {
         // não atualiza a página
         event.preventDefault()
 
-        const myAPIKey = 'b5c16b59';
+        const myAPIKey = '386ec285';
 
         try {
             const response = await apiImdb.get<IFilme>(`${novoFilme}&apikey=${myAPIKey}`)
