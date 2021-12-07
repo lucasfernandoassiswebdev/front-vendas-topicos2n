@@ -9,6 +9,7 @@ export const Header: React.FC = () => {
                 <ul>
                     <li><NavLink to="/">Dashboard</NavLink></li>
                     <li><NavLink to="/repository">Repositório</NavLink></li>
+                    <li><NavLink to="/filmes">Filmes</NavLink></li>
                 </ul>
             </Navegacao>
         </>
