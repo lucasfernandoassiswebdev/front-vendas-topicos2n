@@ -41,7 +41,7 @@ export const Filmes: React.FC = () => {
             <img src={logo} alt="Filme"></img>
             <Title>Catálogo de filmes do IMDB</Title>
             <Formulario onSubmit={handleAddFilme}>
-                <input placeholder="username/nome_repositorio" onChange={handleInputChange} />
+                <input placeholder="Nome do filme" onChange={handleInputChange} />
                 <button type="submit">Buscar</button>
             </Formulario>
             <Filme>
